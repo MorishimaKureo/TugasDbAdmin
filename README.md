@@ -11,7 +11,7 @@ Aplikasi Node.js untuk mengelola inventori toko dengan fitur lengkap CRUD (Creat
 - [API Endpoints](#api-endpoints)
 - [Struktur Database](#struktur-database)
 
-## ✨ Fitur
+# ✨ Fitur
 
 ### 1. Manajemen Kategori
 - Tambah, baca, ubah, hapus kategori produk
@@ -38,7 +38,7 @@ Aplikasi Node.js untuk mengelola inventori toko dengan fitur lengkap CRUD (Creat
 - Otomatis update stok produk
 - Tracking keuntungan penjualan
 
-## 🔧 Prasyarat
+# 🔧 Prasyarat
 
 - Node.js v14 atau lebih tinggi
 - MySQL Server (MariaDB atau MySQL)
@@ -68,7 +68,7 @@ PORT=3000
 NODE_ENV=development
 ```
 
-## 🗄️ Konfigurasi Database
+# 🗄️ Konfigurasi Database
 
 1. **Buat database dan tabel**
 
@@ -89,7 +89,7 @@ USE sistem_inventori;
 
 Database akan otomatis connect saat aplikasi start jika konfigurasi `.env` benar.
 
-## 🚀 Menjalankan Aplikasi
+# 🚀 Menjalankan Aplikasi
 
 ### Development Mode (dengan auto-reload)
 ```bash
@@ -103,7 +103,7 @@ npm start
 
 Server akan berjalan di `http://localhost:3000`
 
-## 🔌 API Endpoints
+# 🔌 API Endpoints
 
 ### Base URL: `http://localhost:3000/api`
 
@@ -205,7 +205,7 @@ DELETE /penjualan/:id      - Hapus penjualan
 }
 ```
 
-## 🗃️ Struktur Database
+# 🗃️ Struktur Database
 
 ### Tabel Kategori
 ```
@@ -267,7 +267,7 @@ keterangan (TEXT)
 created_at (TIMESTAMP)
 ```
 
-## 📊 Relasi Database
+# 📊 Relasi Database
 
 ```
 kategori (1) -----(N) produk
@@ -277,14 +277,14 @@ produk (1) -----(N) pembelian
 produk (1) -----(N) penjualan
 ```
 
-## 🔐 Catatan Keamanan
+# 🔐 Catatan Keamanan
 
 - Gunakan prepared statements (sudah implemented)
 - Validasi input pada setiap endpoint
 - Gunakan environment variables untuk kredensial
 - Set database password yang kuat
 
-## 📝 Contoh Workflow Lengkap
+# 📝 Contoh Workflow Lengkap
 
 1. **Buat Kategori**
    - POST /api/kategori
@@ -304,7 +304,7 @@ produk (1) -----(N) penjualan
 6. **Monitor Inventori**
    - GET /api/produk (lihat stok real-time)
 
-## 🐛 Troubleshooting
+# 🐛 Troubleshooting
 
 ### Koneksi Database Error
 - Pastikan MySQL Server sudah berjalan
@@ -319,7 +319,7 @@ produk (1) -----(N) penjualan
 - Ubah `PORT` di `.env` atau environment
 - Atau berhentikan aplikasi lain yang pakai port yang sama
 
-## 📧 Support
+# 📧 Support
 Untuk bantuan lebih lanjut, silakan buat issue atau hubungi administrator.
 
 ---
