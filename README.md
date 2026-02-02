@@ -11,6 +11,8 @@ Aplikasi Node.js untuk mengelola inventori toko dengan fitur lengkap CRUD (Creat
 - [API Endpoints](#api-endpoints)
 - [Struktur Database](#struktur-database)
 
+<a id="fitur"></a>
+
 # ✨ Fitur
 
 ### 1. Manajemen Kategori
@@ -38,11 +40,15 @@ Aplikasi Node.js untuk mengelola inventori toko dengan fitur lengkap CRUD (Creat
 - Otomatis update stok produk
 - Tracking keuntungan penjualan
 
+<a id="prasyarat"></a>
+
 # 🔧 Prasyarat
 
 - Node.js v14 atau lebih tinggi
 - MySQL Server (MariaDB atau MySQL)
 - npm atau yarn
+
+<a id="instalasi"></a>
 
 ## 📦 Instalasi
 
@@ -68,6 +74,8 @@ PORT=3000
 NODE_ENV=development
 ```
 
+<a id="konfigurasi-database"></a>
+
 # 🗄️ Konfigurasi Database
 
 1. **Buat database dan tabel**
@@ -89,6 +97,8 @@ USE sistem_inventori;
 
 Database akan otomatis connect saat aplikasi start jika konfigurasi `.env` benar.
 
+<a id="menjalankan-aplikasi"></a>
+
 # 🚀 Menjalankan Aplikasi
 
 ### Development Mode (dengan auto-reload)
@@ -102,6 +112,8 @@ npm start
 ```
 
 Server akan berjalan di `http://localhost:3000`
+
+<a id="api-endpoints"></a>
 
 # 🔌 API Endpoints
 
@@ -204,6 +216,8 @@ DELETE /penjualan/:id      - Hapus penjualan
   "keterangan": "Penjualan ke customer A"
 }
 ```
+
+<a id="struktur-database"></a>
 
 # 🗃️ Struktur Database
 
